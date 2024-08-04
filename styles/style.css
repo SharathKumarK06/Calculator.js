@@ -1,0 +1,31 @@
+.container {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.answer-bar {
+  width: 100%;
+  height: 20%;
+  border: solid 1px red;
+  margin: 0;
+}
+
+.answer-bar button {
+
+}
+
+.button-block {
+  width: 100%;
+  height: 80%;
+}
+
+.table {
+  width: inherit;
+  height: inherit;
+}
+
+.debug {
+  border: solid 1px black;
+}
