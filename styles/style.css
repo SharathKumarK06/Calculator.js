@@ -1,3 +1,27 @@
+/* center whole content horizontally and vertically */
+/* solution 1: without using flexbox */
+/* html, body { */
+/*   height: 100%; */
+/*   margin: 0; */
+/* } */
+
+/* .container { */
+/*   position: absolute; */
+/*   top: 50%; */
+/*   left: 50%; */
+/*   transform: translate(-50%, -50%); */
+/* } */
+
+/* center whole content horizontally and vertically */
+/* solution 2: using flexbox */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   width: 600px;
   margin: auto;
@@ -10,7 +34,7 @@
   table-layout: fixed;
 }
 
-textarea.answer-bar {
+textarea#answer-bar {
   resize: none;
   text-align: right;
   background: #d9ecfc;
@@ -28,7 +52,7 @@ textarea.answer-bar {
   transition: background-color 500ms;
 }
 
-textarea.answer-bar:hover {
+textarea#answer-bar:hover {
   background-color: #c0e0fc;
 }
 
