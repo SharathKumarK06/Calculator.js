@@ -1,31 +1,58 @@
 .container {
-  width: 800px;
-  height: 600px;
+  width: 600px;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
+  background: #d9ecfc;
 }
 
-.answer-bar {
+.table, tbody {
+  width: inherit;
+  table-layout: fixed;
+}
+
+textarea.answer-bar {
+  resize: none;
+  text-align: right;
+  background: #d9ecfc;
+  border: 1px solid #7db6e8;
+  border-radius: 5px;
+  outline-width: 0;
   width: 100%;
-  height: 20%;
-  border: solid 1px red;
-  margin: 0;
+  height: 3em;
+  font-size: 16pt;
+  overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: background-color 500ms;
 }
 
-.answer-bar button {
-
+textarea.answer-bar:hover {
+  background-color: #c0e0fc;
 }
 
 .button-block {
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
-.table {
-  width: inherit;
-  height: inherit;
+table td {
+  text-align: center;
+  padding: 0;
 }
 
-.debug {
-  border: solid 1px black;
+td .btn {
+  width: 100%;
+  padding: 0.5rem 0;
+  outline: none;
+  border: none;
+  background-color: #c1ddf5;
+  border-radius: 5px;
 }
+
+
+/* debug */
+/* .container, .button-block, td, .debug { */
+/*   border: solid 1px red; */
+/* } */
